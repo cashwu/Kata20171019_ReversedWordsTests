@@ -7,8 +7,19 @@ namespace Kata20171019_ReversedWordsTests
     public class ReversedWordsTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void input_apple()
         {
+            var kata = new Kata();
+            var result = kata.ReverseWords("apple");
+            Assert.AreEqual("apple", result);
+        }
+    }
+
+    public class Kata
+    {
+        public string ReverseWords(string str)
+        {
+            return str;
         }
     }
 }
